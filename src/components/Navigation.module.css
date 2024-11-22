@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0056b3;
+  font-weight: 700;
+}
+.logoutButton {
+  background-color: #f44336;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logoutButton:hover {
+  background-color: #d32f2f;
+}

@@ -1,16 +1,17 @@
-export const App = () => {
+import { Route, Routes } from 'react-router-dom';
+import LoginPage from '../pages/LoginPage';
+import ContactsPage from '../pages/ContactsPage';
+import RegisterPage from '../pages/RegisterPage';
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+      <Route path="/contacts" element={<ContactsPage />} />
+      <Route path="/login" element={<LoginPage />} />
+    </Routes>
   );
-};
+}
+
+export default App;
